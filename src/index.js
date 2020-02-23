@@ -18,13 +18,13 @@ let normalFn = {
     //アロー関数にするとthisがbindされる
     setTimeout(() => {
       console.log(this.id);
-    }, 2000);
+    }, 3000);
     //アロー関数を使わずにthisをbind()しても良い
-    window.setTimeout(
+    setTimeout(
       function() {
         console.log(this.id);
       }.bind(this),
-      3000
+      4000
     );
   }
 };
