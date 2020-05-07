@@ -1,3 +1,12 @@
+// デフォルトのインポート
+import allow from "./allow.js";
+// 複数インポート
+import { create, allow_create } from "./allow2.js";
+
+allow();
+console.log(create("yyy", "ohonda"));
+console.log(allow_create("ttt", "ohonda"));
+
 /**
  * thisのバインドについて
  */
