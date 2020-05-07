@@ -5,13 +5,12 @@ function create(sei, mei) {
   };
 }
 //オブジェクトリテラルの返却は括弧が必要
-let allow_create = (
-  sei,
-  mei //{ return
-) => ({
-  name: mei + " " + sei,
-  address: "tokyo-to"
-});
+let allow_create = (sei, mei) =>
+  //{ return
+  ({
+    name: mei + " " + sei,
+    address: "tokyo-to"
+  });
 //};
 
 //console.log(create("yyy", "ohonda"));
