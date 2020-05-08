@@ -1,11 +1,32 @@
-// デフォルトのインポート
+/**
+ * モジュール読み込み
+ * https://ja.javascript.info/import-export
+ */
+
+// デフォルトエクスポート時は波括弧がいらない
 import allow from "./allow.js";
 // 複数インポート
 import { create, allow_create } from "./allow2.js";
+// Classのインポート
+import { Item, Item2, Item3 } from "./class.js";
 
+// allow.jsの確認
 allow();
+
+// allow2.jsの確認
 console.log(create("yyy", "ohonda"));
 console.log(allow_create("ttt", "ohonda"));
+
+// class.jsの確認
+let item = new Item();
+console.log("tax", item.getTax());
+
+let item2 = new Item2(500);
+console.log("tax", item2.getTax());
+
+let item3 = new Item3(10);
+//item3.tax = "hhh";
+console.log("tax", item3.tax);
 
 /**
  * thisのバインドについて

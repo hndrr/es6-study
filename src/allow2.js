@@ -13,8 +13,5 @@ let allow_create = (sei, mei) =>
   });
 //};
 
-//console.log(create("yyy", "ohonda"));
-//console.log(allow_create("ttt", "ohonda"));
-
 //宣言済み関数の名前付きエクスポート
 export { create, allow_create };
